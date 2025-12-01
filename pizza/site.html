@@ -51,9 +51,18 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             position: relative;
             overflow: hidden;
+
+    /* animação suave para expansão */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        /* IMAGENS OCULTAS QUE APARECEM NO HOVER */
+/* Efeito de expansão no hover */
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        }
+
+/* IMAGENS APARECENDO NO HOVER */
         .card img {
             width: 100%;
             max-height: 250px;
@@ -67,6 +76,7 @@
         .card:hover img {
             opacity: 1;
         }
+
 
         footer {
             background: #d35400;
@@ -144,8 +154,8 @@
 
             <div class="card">
                 <img src="pizza-doce-capa.jpeg" alt="Pizza Chocolate">
-                <h3>🍕 Chocolate</h3>
-                <p>Chocolate ao leite derretido com raspas de chocolate.</p>
+                <h3>🍕 Chocolate com morango</h3>
+                <p>Chocolate ao leite derretido com granulado e pedaços de morango.</p>
             </div>
 
             <div class="card">
