@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores de Pizza</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff7e6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #d35400;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background: #e67e22;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #d35400;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* IMAGENS OCULTAS QUE APARECEM NO HOVER */
+        .card img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .card:hover img {
+            opacity: 1;
+        }
+
+        footer {
+            background: #d35400;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sabores de Pizza</h1>
+        <p>Conheça os principais sabores e escolha a sua próxima delícia!</p>
+    </header>
+
+    <nav>
+        <a href="#tradicionais">Tradicionais</a>
+        <a href="#especiais">Especiais</a>
+        <a href="#doces">Doces</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- TRADICIONAIS -->
+        <section id="tradicionais">
+            <h2>Pizzas Tradicionais</h2>
+
+            <div class="card">
+                <img src="Pizza-marguerita-caseira.webp" alt="Pizza Margherita">
+                <h3>🍕 Margherita</h3>
+                <p>Molho de tomate, mussarela, manjericão fresco e um toque de azeite.</p>
+            </div>
+
+            <div class="card">
+                <img src="85.Pizza-de-Calabresa-com-Catupiry.webp" alt="Pizza Calabresa">
+                <h3>🍕 Calabresa</h3>
+                <p>Calabresa fatiada, cebola, mussarela e orégano.</p>
+            </div>
+
+            <div class="card">
+                <img src="2-12.png" alt="Pizza Mussarela">
+                <h3>🍕 Mussarela</h3>
+                <p>A clássica: molho de tomate, muita mussarela e orégano.</p>
+            </div>
+        </section>
+
+        <!-- ESPECIAIS -->
+        <section id="especiais">
+            <h2>Pizzas Especiais</h2>
+
+            <div class="card">
+                <img src="Pizza-4-queijos.jpg" alt="Pizza Quatro Queijos">
+                <h3>🍕 Quatro Queijos</h3>
+                <p>Mussarela, gorgonzola, parmesão e provolone.</p>
+            </div>
+
+            <div class="card">
+                <img src="blog-receita-frango-catupiry.jpg" alt="Frango com Catupiry">
+                <h3>🍕 Frango com Catupiry</h3>
+                <p>Frango desfiado temperado com catupiry cremoso.</p>
+            </div>
+
+            <div class="card">
+                <img src="maxresdefault.jpg" alt="Pizza Portuguesa">
+                <h3>🍕 Portuguesa</h3>
+                <p>Presunto, ovo, cebola, azeitona, pimentão e mussarela.</p>
+            </div>
+        </section>
+
+        <!-- DOCES -->
+        <section id="doces">
+            <h2>Pizzas Doces</h2>
+
+            <div class="card">
+                <img src="pizza-doce-capa.jpeg" alt="Pizza Chocolate">
+                <h3>🍕 Chocolate</h3>
+                <p>Chocolate ao leite derretido com raspas de chocolate.</p>
+            </div>
+
+            <div class="card">
+                <img src="como_fazer_pizza_de_banana_27184_orig.jpg" alt="Banana com Canela">
+                <h3>🍕 Banana com Canela</h3>
+                <p>Banana fatiada, açúcar e canela.</p>
+            </div>
+
+            <div class="card">
+                <img src="pizza-romeu-e-julieta.avif" alt="Pizza Romeu e Julieta">
+                <h3>🍕 Romeu e Julieta</h3>
+                <p>Queijo cremoso e goiabada derretida.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>🍕 Site de Sabores de Pizza — Feito com amor e fome 🍕</p>
+    </footer>
+
+</body>
+</html>
